@@ -3,7 +3,7 @@
 		<clickable-text align='Left' text='Stick Drift Settings' highlight-color='FFF'  italics='true'></clickable-text>
 		<toggle-setting text='Enable Mod' apply-on-change='true' value='enabled'></toggle-setting>
 
-		<slider-setting text='Controller Deadzone' min='0.01' max='0.99' increment='0.01' apply-on-change='true' value='deadzone' show-buttons='true'/>
+		<slider-setting text='Controller Deadzone' min='0.01' max='1' increment='0.01' apply-on-change='true' value='deadzone' show-buttons='true'/>
 
 	</settings-container>
 	
