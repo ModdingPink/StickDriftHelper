@@ -8,6 +8,7 @@
   "description": "Lets you change deadzone settings to aid with stick drift for scroll menus!",
   "dependsOn": {
     "BSIPA": "^4.2.2",
-    "SiraUtil": "^3.1.2"
+    "SiraUtil": "^3.1.2",
+    "BeatSaberMarkupLanguage": "^1.6.3"
   }
 }
