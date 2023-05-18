@@ -1,0 +1,146 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Assets\**" />
+    <EmbeddedResource Remove="Assets\**" />
+    <None Remove="Assets\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Installers\WarmupInstaller.cs" />
+    <Compile Remove="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Installers\ADGameInstaller" />
+    <None Remove="Installers\GameInstaller" />
+    <None Remove="Installers\NewFile1.txt" />
+    <None Remove="manifest.json" />
+    <None Remove="NewFile1.txt" />
+    <None Remove="UI\Menu.bsml" />
+    <None Remove="UI\NewFile1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="manifest.json" />
+    <EmbeddedResource Include="UI\Menu.bsml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="BS_Utils">
+      <HintPath>$(BeatSaberDir)\Plugins\BS_Utils.dll</HintPath>
+      <Private>False</Private>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(BeatSaberDir)\Libs\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+      <Private>False</Private>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>False</Private>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\UnityEngine.InputModule.dll</HintPath>
+      <Private>False</Private>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Main">
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\Main.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Colors">
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\Colors.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GameplayCore">
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\GameplayCore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BeatmapCore">
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\BeatmapCore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="HMLib">
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\HMLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="HMUI">
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\HMUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="HMRendering">
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\HMRendering.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="IPA.Loader">
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\IPA.Loader.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BSML">
+      <HintPath>$(BeatSaberDir)\Plugins\BSML.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Beat Saber\Beat Saber_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Beat Saber\Beat Saber_Data\Managed\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      <Private>False</Private>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\UnityEngine.XRModule.dll</HintPath>
+      <Private>False</Private>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Zenject">
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\Zenject.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\Zenject-usage.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SiraUtil">
+      <HintPath>$(BeatSaberDir)\Plugins\SiraUtil.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(BeatSaberDir)\Libs\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy /Y &quot;$(TargetDir)$(TargetName).dll&quot; &quot;$(BeatSaberDir)\Plugins\$(TargetName).dll&quot;" />
+  </Target>
+</Project>

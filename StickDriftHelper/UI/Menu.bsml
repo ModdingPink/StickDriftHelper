@@ -1,0 +1,10 @@
+﻿<bg id='root' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='https://monkeymanboy.github.io/BSML-Docs/ https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd'>
+	<settings-container>
+		<clickable-text align='Left' text='Stick Drift Settings' highlight-color='FFF'  italics='true'></clickable-text>
+		<toggle-setting text='Enable Mod' apply-on-change='true' value='enabled'></toggle-setting>
+
+		<slider-setting text='Controller Deadzone' min='0.01' max='0.99' increment='0.01' apply-on-change='true' value='deadzone' show-buttons='true'/>
+
+	</settings-container>
+	
+</bg>

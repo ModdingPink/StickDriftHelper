@@ -1,0 +1,13 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/bsmg/BSIPA-MetadataFileSchema/master/Schema.json",
+  "id": "StickDriftHelper",
+  "name": "StickDriftHelper",
+  "author": "Pink",
+  "version": "1.0.0",
+  "gameVersion": "1.29.1",
+  "description": "Lets you change deadzone settings to aid with stick drift for scroll menus!",
+  "dependsOn": {
+    "BSIPA": "^4.2.2",
+    "SiraUtil": "^3.1.2"
+  }
+}
