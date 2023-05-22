@@ -27,6 +27,7 @@ namespace StickDriftHelper.Patches
         [HarmonyPatch("HandleJoystickWasNotCenteredThisFrame")]
         internal class ScrollViewStickDrift
         {
+            [HarmonyBefore(new string[] { "Kinsi55.BeatSaber.Tweaks55" })]
             static bool Prefix(ScrollView __instance, ref Vector2 deltaPos)
             {
                 if (!Config.Instance.Enabled) return true;
