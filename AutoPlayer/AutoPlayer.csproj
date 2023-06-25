@@ -1,7 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="Assets\**" />
@@ -31,8 +33,18 @@
       <Private>False</Private>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="JoshaParity">
+      <HintPath>$(BeatSaberDir)\Libs\JoshaParity.dll</HintPath>
+      <Private>False</Private>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>$(BeatSaberDir)\Libs\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="SongCore">
+      <HintPath>$(BeatSaberDir)\Plugins\SongCore.dll</HintPath>
       <Private>False</Private>
       <SpecificVersion>False</SpecificVersion>
     </Reference>

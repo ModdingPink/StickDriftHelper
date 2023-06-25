@@ -1,14 +1,14 @@
 ﻿{
   "$schema": "https://raw.githubusercontent.com/bsmg/BSIPA-MetadataFileSchema/master/Schema.json",
-  "id": "StickDriftHelper",
-  "name": "StickDriftHelper",
+  "id": "AutoPlayer",
+  "name": "AutoPlayer",
   "author": "Pink",
   "version": "1.0.0",
-  "gameVersion": "1.29.1",
+  "gameVersion": "1.21.0",
   "description": "Lets you change deadzone settings to aid with stick drift for scroll menus!",
   "dependsOn": {
     "BSIPA": "^4.2.2",
     "SiraUtil": "^3.1.2",
-    "BeatSaberMarkupLanguage": "^1.6.3"
+    "BeatSaberMarkupLanguage": "^1.6.8"
   }
 }

@@ -8,7 +8,7 @@ using BeatSaberMarkupLanguage.Settings;
 using UnityEngine;
 using Zenject;
 
-namespace StickDriftHelper.UI
+namespace AutoPlayer.UI
 {
 	public class StickDriftMenu : MonoBehaviour, IInitializable, INotifyPropertyChanged
 	{
@@ -37,7 +37,7 @@ namespace StickDriftHelper.UI
         
         public void Initialize()
 		{
-            BSMLSettings.instance.AddSettingsMenu("Stick Drift Helper", "StickDriftHelper.UI.Menu.bsml", this);
+            BSMLSettings.instance.AddSettingsMenu("Stick Drift Helper", "AutoPlayer.UI.Menu.bsml", this);
 		}
 	}
 }

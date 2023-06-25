@@ -11,12 +11,11 @@ using UnityEngine;
 using System.Threading.Tasks;
 using System;
 using Newtonsoft.Json.Linq;
-using System.Net.Http;
 using System.IO.Compression;
-using StickDriftHelper.Installers;
-using StickDriftHelper;
+using AutoPlayer.Installers;
+using AutoPlayer;
 
-namespace StickDriftHelper
+namespace AutoPlayer
 {
     [Plugin(RuntimeOptions.DynamicInit), NoEnableDisable]
     public class Plugin
@@ -33,6 +32,7 @@ namespace StickDriftHelper
 
             zenjector.UseLogger(logger);
             zenjector.Install<MenuInstaller>(Location.Menu);
+            zenjector.Install<PlayerInstaller>(Location.Player);
 
          
         }
@@ -40,7 +40,7 @@ namespace StickDriftHelper
         [OnStart]
         public void OnStart()
         {
-            var harmony = new Harmony("Pink.StickDrift");
+            var harmony = new Harmony("Pink.Autoplay");
             harmony.PatchAll(Assembly);
          
         }

@@ -1,7 +1,7 @@
-﻿using StickDriftHelper.UI;
+﻿using AutoPlayer.UI;
 using Zenject;
 
-namespace StickDriftHelper.Installers
+namespace AutoPlayer.Installers
 {
     class MenuInstaller : Installer
     {

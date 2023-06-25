@@ -2,7 +2,7 @@
 using IPA.Config.Stores.Converters;
 using UnityEngine;
 
-namespace StickDriftHelper
+namespace AutoPlayer
 {
     public class Config
     {
