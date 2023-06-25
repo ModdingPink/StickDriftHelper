@@ -1,1 +1,0 @@
-Lets you change deadzone settings to aid with stick drift for scroll menus!
